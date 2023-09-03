@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yummy</title>
+   <link href="./images/logo.png" rel="icon" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+  <main>
+    <!-- //SECTION - Navigation -->
+    <nav>
+      <div id="navBarr" class="sidenav ">
+        <div id="navlist" class="pt-0">
+          <a class="search" href="#search">Search</a>
+          <a class="categories" href="#categories">Categories</a>
+          <a class="area" href="#area">Area</a>
+          <a class="ingredients" href="#ingredients">Ingredients</a>
+          <a class="contact" href="#Contact">Contact Us</a>
+
+        </div>
+        <div id="sidenavFooter">
+          <i class="fa-brands fa-facebook m-2 mb-3"></i>
+          <i class="fa-brands fa-twitter m-2 mb-3"></i>
+          <i class="fa-solid fa-globe m-2 mb-3"></i>
+          <p>Copyright Â© 2019 All Rights
+            Reserved.</p>
+        </div>
+      </div>
+      <div id="content">
+        <div class="logo-img">
+          <img id="logo" src="./images/logo.png" alt="logo" class="w-75  m-auto">
+        </div>
+        <span id="openBtn" class="fw-bolder fs-1">≣</span>
+        <span class="d-flex flex-column justify-content-between ">
+          <i class="fa-solid fa-globe mb-2"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </span>
+      </div>
+    </nav>
+    <!-- //!SECTION - Navigation -->
+
+    <!-- //SECTION - Search -->
+    <section id="search">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col">
+            <input id="searchByNameInput" type="text" class="searchInput form-control" placeholder="Search by Name">
+          </div>
+          <div class="col">
+            <input id="searchByFirstLetterInput" type="text" class="searchInput form-control"
+              placeholder="Search by First letter">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //!SECTION - Search -->
+
+    <!-- //SECTION - Header  -->
+    <header id="home" class="   pt-5">
+      <div class="container">
+        <div id="mealsRow" class=" row py-5 g-4">
+          <div class="col-md-3">
+            <div class="position-relative overflow-hidden rounded-2 cursor-pointer">
+              <img src="./images/58oia61564916529.jpg" class="w-100" alt=" placeholder">
+              <div id="figCap" class=" position-absolute d-flex text-danger text-center p-2">
+                <h3 >Kumpir</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- //!SECTION Header  -->
+
+    <!-- //SECTION - Contact -->
+    <section id="contact">
+      <div class="container w-75">
+        <div class="row   w-75 m-auto">
+          <div class="col-lg py-2">
+            <input id="name" type="text" class="form-control" placeholder="Enter your Name">
+            <div id="invalidName" class="alert alert-danger mt-2  d-none"> invalid Name</div>
+          </div>
+          <div class="col-lg py-2">
+            <input id="email" type="email" class="form-control" placeholder="Enter your Email">
+            <div id="invalidEmail" class="alert alert-danger mt-2 d-none ">Email not valid *exemple@yyy.zzz</div>
+          </div>
+        </div>
+        <div class="row  w-75 m-auto">
+          <div class="col-lg py-2">
+            <input id="phone" type="tel" class="form-control" placeholder="Enter your Phone">
+            <div id="invalidPhone" class="alert alert-danger mt-2 d-none ">Enter valid Phone Number</div>
+          </div>
+          <div class="col-lg py-2">
+            <input id="age" type="number" class="form-control" placeholder="Enter your Age">
+            <div id="invalidAge" class="alert alert-danger mt-2  d-none">Enter valid Age</div>
+          </div>
+        </div>
+        <div class="row  w-75 m-auto">
+          <div class="col-lg py-2">
+            <input id="password" type="password" class="form-control" placeholder="Enter your password">
+            <div id="invalidPassword" class="alert alert-danger mt-2  d-none">Enter valid password *Minimum eight
+              characters, at least one letter and one number:*</div>
+          </div>
+          <div class="col-lg py-2">
+            <input id="repassword" type="password" class="form-control" placeholder="Repassword">
+            <div id="invalidrepassword" class="alert alert-danger mt-2  d-none">Enter valid repassword</div>
+          </div>
+        </div>
+        <div class="row  ">
+          <div class="col-1 py-3 m-auto ">
+            <button  id="submitBtn" type="submit" class=" btn btn-outline-danger my-3 py-2">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //!SECTION - Contact -->
+
+    <!-- //SECTION - Loader -->
+    <div class="loading" id="loading">
+      <i class="fa-solid fa-spinner fa-2xl " style="color: #ffffff;"></i>
+    </div>
+    <!-- //!SECTION - Loader -->
+  </main>
+
+
+
+  <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

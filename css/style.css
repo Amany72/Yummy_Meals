@@ -1,0 +1,185 @@
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Side navbar*/
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    height: 100vh;
+    width: 0;
+    margin-left: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0d0d0d;
+    overflow-x: hidden;
+    padding-top: 25px;
+    z-index: 99;
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    /* color: #0d0d0d; */
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navlist {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 99;
+}
+
+#navlist a {
+    padding: 18px;
+    padding-left: -10px;
+    font-size: 19px;
+
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1;
+    text-decoration: none;
+  
+    width: 60%;
+    position: relative; 
+     display: block;
+    top: 200px;
+    z-index: 99;
+    transition: 0.5s all;
+}
+#navlist a:hover{
+    color: brown;
+    border: 2px solid #ffffff ;
+border-radius: 10%;
+border-width: 10x;
+}
+
+#sidenavFooter {
+    display: block;
+    width: 250px;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 18px;
+    padding-left: 18px;
+    z-index: 99;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+#content {
+    padding: 1.2rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    float: left;
+    width: 65px;
+    background-color: #ffffff;
+    color: #0d0d0d;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    height: 100vh;
+}
+
+#submitBtn:hover{
+background-color: #ffffff !important;
+color: brown !important;
+outline: brown 2px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Header section */
+header {
+    color: white;
+}
+
+::placeholder {
+    color: #999 !important;
+}
+
+.searchInput.form-control,
+.searchInput.form-control:focus {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.logo-img {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.logo-img img {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#mealsRow .col-md-3 {
+    cursor: pointer;
+}
+
+.figCap {
+    width: 100%;
+    height: 100%;
+   
+    background-color: #c8c6c6ca;
+    top: 100%;
+    transition: .5s;
+    z-index: 1;
+}
+
+figure:hover .figCap {
+    top: 0;
+}
+
+
+/* Header section */
+/* Inputs styling */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: auto;
+}
+
+#search,
+#contact {
+    display: none;
+}
+
+/* Inputs styling */
+
+
